@@ -107,8 +107,3 @@
   command: '{{ rvm1_rvm }} remove {{ rvm1_delete_ruby }}'
   changed_when: False
   when: rvm1_delete_ruby and detect_delete_ruby.rc == 0
-
-- name: ruby | Install Compass gem
-  command: 'gem install compass'
-  changed_when: False
-  sudo: true
